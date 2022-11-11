@@ -1,6 +1,21 @@
-## Getting Started
+## Code Workflow
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+- Player start the game
+- Player input the row and col to insert the Symbol he has
+- System will check the row and col based on the given input
+- Loop the game if there is no one wins or draw the game
+- Stop the game if there is no empty square or one of the player wins
+
+## Game Case
+
+1. If there is no empty square, then stop the game and then print `Draw!`
+2. If every square in the row/col/diagonal was marked with the same `Symbol`, then stop the game with gameStatus = who player wins
+
+## UML Diagram
+
+<img src="./img/UML.png" />
+
+<br/>
 
 ## Folder Structure
 
