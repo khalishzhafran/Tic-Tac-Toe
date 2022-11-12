@@ -87,6 +87,10 @@ public class Game {
 
         // Print the last move
         System.out.println("Marked " + currentPlayer.getSymbol() + " at (" + row + ", " + col + ")\n");
+      } else {
+        // Print the error message if the move is invalid
+        System.out.println("Invalid move! Please try again.\n");
+        continue;
       }
 
       // Print the board after each move

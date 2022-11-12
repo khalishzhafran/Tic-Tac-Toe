@@ -6,6 +6,9 @@ public class Board {
     // Set the dimension of the board and initialize the square array
     this.dimension = dimension;
     square = new Symbol[dimension][dimension];
+
+    // Set the initial value of the square array to Empty
+    initialBoard();
   }
 
   public void initialBoard() {
@@ -33,7 +36,7 @@ public class Board {
     // Check if the square was marked
 
     // It will return true if the square was marked
-    return square[row][col] == Symbol.Empty;
+    return square[row][col] != Symbol.Empty;
   }
 
   public boolean isBoardFull() {
